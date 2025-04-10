@@ -30,7 +30,7 @@ app.mount(
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[FRONTEND_URL],  # Your React frontend
+    allow_origins=["*"],  # Your React frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
